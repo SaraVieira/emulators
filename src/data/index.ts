@@ -28,7 +28,7 @@ import { neogeo } from "./consoles/snk/neogeo"
 import { three3do } from "./consoles/three3do"
 import { intellivision } from "./consoles/intellivision"
 import { cdi } from "./consoles/cdi"
-import { ColecoVision } from "./consoles/colecoVision"
+import { ColecoVision } from "./consoles/coleco/colecoVision"
 import { gbc } from "./consoles/nintendo/gbc"
 import { gba } from "./consoles/nintendo/gba"
 import { ds } from "./consoles/nintendo/ds"
@@ -44,6 +44,10 @@ import { wonderswan } from "./consoles/wonderswan"
 import { gg } from "./consoles/sega/gg"
 import { ngp } from "./consoles/snk/ngp"
 import { supervision } from "./consoles/supervision"
+import { ngage } from "./consoles/ngage"
+import { dos } from "./computers/dos"
+import { acorn } from "./computers/acorn"
+import { amstard } from "./computers/amstrad"
 
 export const consoles = [
   {
@@ -206,6 +210,10 @@ export const consoles = [
         name: "Xbox 360",
         emulators: xbox360,
       },
+      {
+        name: "DOS",
+        emulators: dos,
+      },
     ],
   },
   {
@@ -240,6 +248,15 @@ export const consoles = [
     ],
   },
   {
+    name: "Coleco",
+    consoles: [
+      {
+        name: "ColecoVision",
+        emulators: ColecoVision,
+      },
+    ],
+  },
+  {
     name: "Other",
     consoles: [
       {
@@ -254,10 +271,7 @@ export const consoles = [
         name: "Philips CD-I",
         emulators: cdi,
       },
-      {
-        name: "ColecoVision",
-        emulators: ColecoVision,
-      },
+
       {
         name: "GamePark 32",
         emulators: gp32,
@@ -269,6 +283,18 @@ export const consoles = [
       {
         name: "Watara Supervision",
         emulators: supervision,
+      },
+      {
+        name: "Nokia Ngage",
+        emulators: ngage,
+      },
+      {
+        name: "Acorn",
+        emulators: acorn,
+      },
+      {
+        name: "Amstrad",
+        emulators: amstard,
       },
     ],
   },
