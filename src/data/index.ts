@@ -29,6 +29,13 @@ import { three3do } from "./consoles/three3do"
 import { intellivision } from "./consoles/intellivision"
 import { cdi } from "./consoles/cdi"
 import { ColecoVision } from "./consoles/colecoVision"
+import { gbc } from "./consoles/nintendo/gbc"
+import { gba } from "./consoles/nintendo/gba"
+import { ds } from "./consoles/nintendo/ds"
+import { n3ds } from "./consoles/nintendo/n3ds"
+import { gw } from "./consoles/nintendo/gw"
+import { pokemini } from "./consoles/nintendo/pokemini"
+import { gp32 } from "./consoles/gp32"
 
 export const consoles = [
   {
@@ -108,6 +115,30 @@ export const consoles = [
       {
         name: "Switch",
         emulators: switchConsole,
+      },
+      {
+        name: "Game Boy Color",
+        emulators: gbc,
+      },
+      {
+        name: "Game Boy Advance",
+        emulators: gba,
+      },
+      {
+        name: "DS",
+        emulators: ds,
+      },
+      {
+        name: "3DS",
+        emulators: n3ds,
+      },
+      {
+        name: "Game & Watch",
+        emulators: gw,
+      },
+      {
+        name: "Pokemon Mini",
+        emulators: pokemini,
       },
     ],
   },
@@ -194,6 +225,10 @@ export const consoles = [
       {
         name: "ColecoVision",
         emulators: ColecoVision,
+      },
+      {
+        name: "GamePark 32",
+        emulators: gp32,
       },
     ],
   },
