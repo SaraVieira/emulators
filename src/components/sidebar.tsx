@@ -2,7 +2,6 @@ import { cn } from "@/lib/utils"
 import { Button } from "./ui/button"
 import { consoles } from "../data"
 import { Emulator } from "@/App"
-import { Fragment } from "react"
 import {
   Accordion,
   AccordionContent,
