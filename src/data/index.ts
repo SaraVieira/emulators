@@ -36,26 +36,38 @@ import { n3ds } from "./consoles/nintendo/n3ds"
 import { gw } from "./consoles/nintendo/gw"
 import { pokemini } from "./consoles/nintendo/pokemini"
 import { gp32 } from "./consoles/gp32"
+import { psp } from "./consoles/sony/psp"
+import { pocketstation } from "./consoles/sony/pocketstation"
+import { psvita } from "./consoles/sony/psvita"
+import { lynx } from "./consoles/atari/lynx"
+import { wonderswan } from "./consoles/wonderswan"
+import { gg } from "./consoles/sega/gg"
+import { ngp } from "./consoles/snk/ngp"
+import { supervision } from "./consoles/supervision"
 
 export const consoles = [
   {
     name: "Atari",
     consoles: [
       {
-        name: "Atari 2600",
+        name: "2600",
         emulators: atari2600,
       },
       {
-        name: "Atari 5200",
+        name: "5200",
         emulators: atari5200,
       },
       {
-        name: "Atari 7800",
+        name: "7800",
         emulators: atari7800,
       },
       {
-        name: "Atari Jaguar",
+        name: "Jaguar",
         emulators: jaguar,
+      },
+      {
+        name: "Lynx",
+        emulators: lynx,
       },
     ],
   },
@@ -82,6 +94,18 @@ export const consoles = [
       {
         name: "Playstation 5",
         emulators: ps5,
+      },
+      {
+        name: "PSP",
+        emulators: psp,
+      },
+      {
+        name: "PocketStation",
+        emulators: pocketstation,
+      },
+      {
+        name: "PSVita",
+        emulators: psvita,
       },
     ],
   },
@@ -165,6 +189,10 @@ export const consoles = [
         name: "Dreamcast VMU",
         emulators: vmu,
       },
+      {
+        name: "Game Gear",
+        emulators: gg,
+      },
     ],
   },
   {
@@ -195,6 +223,10 @@ export const consoles = [
       {
         name: "Neo Geo",
         emulators: neogeo,
+      },
+      {
+        name: "Neo Geo Pocket",
+        emulators: ngp,
       },
     ],
   },
@@ -229,6 +261,14 @@ export const consoles = [
       {
         name: "GamePark 32",
         emulators: gp32,
+      },
+      {
+        name: "Wondersawn",
+        emulators: wonderswan,
+      },
+      {
+        name: "Watara Supervision",
+        emulators: supervision,
       },
     ],
   },
