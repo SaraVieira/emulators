@@ -26,7 +26,6 @@ export const atari2600 = [
     linux: false,
     mac: false,
     android: false,
-    online: true,
     openSource: true,
     free: true,
   },

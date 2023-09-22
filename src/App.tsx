@@ -136,21 +136,6 @@ export const columns: ColumnDef<Console>[] = [
     cell: ({ row }) => (row.getValue("android") ? <Check /> : <XIcon />),
   },
   {
-    accessorKey: "online",
-    header: ({ column }) => {
-      return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-        >
-          Online
-          <ArrowUpDown className="ml-2 h-4 w-4" />
-        </Button>
-      )
-    },
-    cell: ({ row }) => (row.getValue("online") ? <Check /> : <XIcon />),
-  },
-  {
     accessorKey: "openSource",
     header: ({ column }) => {
       return (
