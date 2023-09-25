@@ -48,6 +48,12 @@ import { ngage } from "./consoles/ngage"
 import { dos } from "./computers/dos"
 import { acorn } from "./computers/acorn"
 import { amstard } from "./computers/amstrad"
+import { apple } from "./computers/apple"
+import { commodore } from "./computers/commodore/commodore"
+import { amiga } from "./computers/commodore/amiga"
+import { atariComputers } from "./consoles/atari/computers"
+import { sinclairZx } from "./computers/sinclair-zx"
+import { msx } from "./computers/msx"
 
 export const consoles = [
   {
@@ -72,6 +78,10 @@ export const consoles = [
       {
         name: "Lynx",
         emulators: lynx,
+      },
+      {
+        name: "Computers",
+        emulators: atariComputers,
       },
     ],
   },
@@ -257,6 +267,19 @@ export const consoles = [
     ],
   },
   {
+    name: "Commodore",
+    consoles: [
+      {
+        name: "Commodore",
+        emulators: commodore,
+      },
+      {
+        name: "Amiga",
+        emulators: amiga,
+      },
+    ],
+  },
+  {
     name: "Other",
     consoles: [
       {
@@ -295,6 +318,18 @@ export const consoles = [
       {
         name: "Amstrad",
         emulators: amstard,
+      },
+      {
+        name: "Apple",
+        emulators: apple,
+      },
+      {
+        name: "Spectrum",
+        emulators: sinclairZx,
+      },
+      {
+        name: "MSX",
+        emulators: msx,
       },
     ],
   },
