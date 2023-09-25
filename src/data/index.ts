@@ -54,8 +54,23 @@ import { amiga } from "./computers/commodore/amiga"
 import { atariComputers } from "./consoles/atari/computers"
 import { sinclairZx } from "./computers/sinclair-zx"
 import { msx } from "./computers/msx"
+import { arcades } from "./consoles/arcades"
+import { multi } from "./consoles/multi"
 
 export const consoles = [
+  {
+    noHeader: true,
+    consoles: [
+      {
+        name: "Multi System",
+        emulators: multi,
+      },
+      {
+        name: "Arcade",
+        emulators: arcades,
+      },
+    ],
+  },
   {
     name: "Atari",
     consoles: [

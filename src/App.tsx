@@ -287,7 +287,7 @@ export default () => {
     consoles[0].consoles[0]
   )
   return (
-    <div className="flex gap-1">
+    <div className="flex gap-4">
       <Sidebar activeConsole={activeConsole} onChange={setActiveConsole} />
       <Home emulators={activeConsole.emulators} />
     </div>
