@@ -211,4 +211,15 @@ export const n64 = [
     name: "Wii64-PS3",
     link: "https://github.com/emukidid/wii64-ps3",
   },
+  {
+    name: "Hydra",
+    link: "https://github.com/hydra-emu/hydra",
+    windows: true,
+    linux: true,
+    mac: true,
+    android: false,
+    openSource: true,
+    free: true,
+    recommended: false,
+  },
 ]
