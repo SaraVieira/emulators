@@ -67,7 +67,7 @@ export function Sidebar({ className, activeConsole, onChange }: SidebarProps) {
   return (
     <div
       className={cn(
-        "pb-12 max-h-screen overflow-auto w-[350px] flex-grow",
+        "pb-12 sm:max-h-screen overflow-auto sm:w-[350px] flex-grow max-h-[30vh]",
         className
       )}
     >
@@ -85,7 +85,7 @@ export function Sidebar({ className, activeConsole, onChange }: SidebarProps) {
               "no consoles"
             )
           ) : (
-            <Accordion type="single" collapsible defaultValue="Nintendo">
+            <Accordion type="single" collapsible>
               {consoles.map((brand) =>
                 !brand.noHeader && brand.name ? (
                   <AccordionItem value={brand.name} key={brand.name}>

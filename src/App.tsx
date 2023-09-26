@@ -182,7 +182,7 @@ function Home({ emulators }: { emulators: Emulator[] }) {
   })
 
   return (
-    <div className="w-full">
+    <div className="w-full px-7 sm:px-0">
       <div className="flex items-center py-4">
         <Input
           placeholder="Filter emulators..."
@@ -287,7 +287,7 @@ export default () => {
     consoles[0].consoles[0]
   )
   return (
-    <div className="flex gap-4">
+    <div className="sm:flex gap-4">
       <Sidebar activeConsole={activeConsole} onChange={setActiveConsole} />
       <Home emulators={activeConsole.emulators} />
     </div>
