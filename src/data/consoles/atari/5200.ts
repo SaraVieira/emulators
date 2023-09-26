@@ -10,16 +10,6 @@ export const atari5200 = [
     free: true,
   },
   {
-    name: "Jum52",
-    link: "https://www.zophar.net/a5200/jum52.html",
-    windows: true,
-    linux: false,
-    mac: false,
-    android: false,
-    openSource: false,
-    free: true,
-  },
-  {
     name: "kat5200",
     link: "https://kat5200.jillybunch.com/",
     recommended: true,
@@ -31,11 +21,14 @@ export const atari5200 = [
     free: true,
   },
   {
-    name: "Rainbow",
-    link: "https://web.archive.org/web/20120914030219/http://www.chrislam.co.uk/rainbow-atari-8bit-emulator.htm",
-  },
-  {
     name: "Virtual Super System (VSS)",
     link: "http://atarihq.com/danb/a5200.shtml#emulators",
+    windows: true,
+    linux: false,
+    mac: false,
+    android: false,
+    openSource: false,
+    free: true,
+    recommended: false,
   },
 ]
